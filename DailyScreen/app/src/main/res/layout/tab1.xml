@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/main_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/title_bar_color">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image_crossscreen" />
+
+            <Button
+                android:id="@+id/hor_record_btn"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/voice_record_cor"
+                android:textColor="@color/title_bar_color"
+                android:text="开始录制"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#fff">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image_verticalscreen"/>
+
+            <Button
+                android:id="@+id/ver_record_btn"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/voice_record_ver"
+                android:text="开始录制"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <!--<include layout="@layout/tab1_buttons_tabs"/>-->
+
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/fragment_Content"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="#ffff"-->
+    <!--android:layout_marginBottom="15dp">-->
+    <!--</RelativeLayout>-->
+
+
+</LinearLayout>
